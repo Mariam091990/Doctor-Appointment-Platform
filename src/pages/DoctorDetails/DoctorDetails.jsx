@@ -1,11 +1,19 @@
 import React from 'react';
 import {   useLoaderData, useParams } from 'react-router';
+import { addToStoredDB } from '../../utility/addToDB';
 
 const DoctorDetails = () => {
    const {registrationNumber}= useParams();
     const data = useLoaderData ();
     const singleDoctor = data.find (doctor => doctor.registrationNumber===registrationNumber );
-    console.log(singleDoctor);
+    // console.log(singleDoctor);
+
+    const handleMarkedAsBooked = registrationNumber => {
+       addToStoredDB(registrationNumber)
+
+
+
+    }
 
     return (
         <div className=''>
@@ -51,7 +59,7 @@ const DoctorDetails = () => {
         </div>
         <br />
         <div className='border-t-1 border-dashed'> </div>
-        <button className='btn btn-block mt-2 rounded-2xl bg-blue-500 text-white'>Book Appointment Now</button>
+        <button onClick={()=>handleMarkedAsBooked(registrationNumber)} className='btn btn-block mt-2 rounded-2xl bg-blue-500 text-white'>Book Appointment Now</button>
            </div>    
         </div>
     );
