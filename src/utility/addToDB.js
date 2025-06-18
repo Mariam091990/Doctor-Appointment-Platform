@@ -37,4 +37,4 @@ localStorage.setItem("bookingList" ,data)
 }
 
 
-export {addToStoredDB};
+export {addToStoredDB, getStoredDoctor};

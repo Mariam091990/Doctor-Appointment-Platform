@@ -1,5 +1,5 @@
 import React from 'react';
-import {   useLoaderData, useParams } from 'react-router';
+import {   Link, useLoaderData, useParams } from 'react-router';
 import { addToStoredDB } from '../../utility/addToDB';
 
 const DoctorDetails = () => {
@@ -10,9 +10,6 @@ const DoctorDetails = () => {
 
     const handleMarkedAsBooked = registrationNumber => {
        addToStoredDB(registrationNumber)
-
-
-
     }
 
     return (
@@ -59,7 +56,7 @@ const DoctorDetails = () => {
         </div>
         <br />
         <div className='border-t-1 border-dashed'> </div>
-        <button onClick={()=>handleMarkedAsBooked(registrationNumber)} className='btn btn-block mt-2 rounded-2xl bg-blue-500 text-white'>Book Appointment Now</button>
+       <Link to='/my-bookings'><button onClick={()=>handleMarkedAsBooked(registrationNumber)} className='btn btn-block mt-2 rounded-2xl bg-blue-500 text-white'>Book Appointment Now</button></Link> 
            </div>    
         </div>
     );

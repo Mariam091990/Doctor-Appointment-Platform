@@ -11,6 +11,7 @@ import Blogs from '../pages/Blogs/Blogs';
 import ContactUs from '../pages/ContactUs/ContactUs';
 import DoctorDetails from '../pages/DoctorDetails/DoctorDetails';
 
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +28,7 @@ export const router = createBrowserRouter([
    {
 
     path:'/my-bookings',
+     loader:()=>fetch('doctorsData.json'),
     Component:MyBookings,
 
 
@@ -49,7 +51,8 @@ export const router = createBrowserRouter([
     loader:()=>fetch('doctorsData.json'),
     Component:DoctorDetails,
 
-   }
+   },
+  
 
     ]
   },
