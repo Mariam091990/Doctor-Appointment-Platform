@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Dr. Ayesha Rahman",
+    "education": "MBBS, FCPS (Medicine)",
+    "speciality": "Internal Medicine",
+    "experience": "12 years",
+    "registrationNumber": "BMDC-545623",
+    "image": "https://randomuser.me/api/portraits/women/44.jpg"
+  },
+  {
+    "name": "Dr. Kamal Uddin",
+    "education": "MBBS, MS (Orthopedics)",
+    "speciality": "Orthopedic Surgeon",
+    "experience": "15 years",
+    "registrationNumber": "BMDC-432119",
+    "image": "https://randomuser.me/api/portraits/men/32.jpg"
+  },
+  {
+    "name": "Dr. Sharmeen Akter",
+    "education": "MBBS, MD (Pediatrics)",
+    "speciality": "Pediatrician",
+    "experience": "10 years",
+    "registrationNumber": "BMDC-783451",
+    "image": "https://randomuser.me/api/portraits/women/68.jpg"
+  },
+  {
+    "name": "Dr. Tanvir Ahmed",
+    "education": "MBBS, FCPS (Cardiology)",
+    "speciality": "Cardiologist",
+    "experience": "18 years",
+    "registrationNumber": "BMDC-229012",
+    "image": "https://randomuser.me/api/portraits/men/65.jpg"
+  },
+  {
+    "name": "Dr. Nusrat Jahan",
+    "education": "MBBS, DGO",
+    "speciality": "Gynecologist",
+    "experience": "14 years",
+    "registrationNumber": "BMDC-667890",
+    "image": "https://randomuser.me/api/portraits/women/56.jpg"
+  },
+  {
+    "name": "Dr. Mahmud Hassan",
+    "education": "MBBS, MD (Dermatology)",
+    "speciality": "Dermatologist",
+    "experience": "9 years",
+    "registrationNumber": "BMDC-389010",
+    "image": "https://randomuser.me/api/portraits/men/45.jpg"
+  },
+  {
+    "name": "Dr. Farzana Chowdhury",
+    "education": "MBBS, FCPS (ENT)",
+    "speciality": "ENT Specialist",
+    "experience": "11 years",
+    "registrationNumber": "BMDC-776541",
+    "image": "https://randomuser.me/api/portraits/women/35.jpg"
+  },
+  {
+    "name": "Dr. Rezaul Karim",
+    "education": "MBBS, MS (Neurosurgery)",
+    "speciality": "Neurosurgeon",
+    "experience": "16 years",
+    "registrationNumber": "BMDC-112299",
+    "image": "https://randomuser.me/api/portraits/men/73.jpg"
+  },
+  {
+    "name": "Dr. Marium Siddiqua",
+    "education": "MBBS, MD (Psychiatry)",
+    "speciality": "Psychiatrist",
+    "experience": "13 years",
+    "registrationNumber": "BMDC-882201",
+    "image": "https://randomuser.me/api/portraits/women/77.jpg"
+  },
+  {
+    "name": "Dr. Jalal Uddin",
+    "education": "MBBS, MS (Urology)",
+    "speciality": "Urologist",
+    "experience": "8 years",
+    "registrationNumber": "BMDC-557612",
+    "image": "https://randomuser.me/api/portraits/men/29.jpg"
+  },
+  {
+    "name": "Dr. Sadia Rahim",
+    "education": "MBBS, FCPS (Ophthalmology)",
+    "speciality": "Eye Specialist",
+    "experience": "10 years",
+    "registrationNumber": "BMDC-314725",
+    "image": "https://randomuser.me/api/portraits/women/22.jpg"
+  },
+  
+  {
+    "name": "Dr. Arif Hossain",
+    "education": "MBBS, MD (Oncology)",
+    "speciality": "Oncologist",
+    "experience": "17 years",
+    "registrationNumber": "BMDC-990003",
+    "image": "https://randomuser.me/api/portraits/men/41.jpg"
+  }
+]
