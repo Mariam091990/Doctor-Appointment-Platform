@@ -1,28 +1,47 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
-import { getStoredDoctor } from '../../utility/addToDB';
+import { getStoredDoctor, removeFromDB } from '../../utility/addToDB';
 
 const MyBookings = () => {
 
 const [bookList, setBookList]=useState ([])
 
-const data = useLoaderData();
-// console.log(data);
+const data= useLoaderData();
+console.log(data);
 
 useEffect (()=>{
 
 const storedDoctorData = getStoredDoctor ();
     //  console.log ( storedDoctorData);
- const bookingsList = data.filter (datum =>storedDoctorData.includes(datum.registrationNumber) )
+     if (Array.isArray(data)) {
+ const bookingsList = data.filter (datum =>storedDoctorData.includes(datum.registrationNumber) 
+ 
+);
+console.log(bookingsList);
  setBookList(bookingsList);
+     } 
+     else{
+        console.warn("invalid loaded data:" , data);}
+        
+     
+}, [data] )
 
-}, [] )
+const handleMarkedAsDel = registrationNumber => {
+
+
+    const remainingData = bookList.filter(leftData=>leftData.registrationNumber!==registrationNumber);
+    setBookList(remainingData) 
+  removeFromDB(registrationNumber)
+    
+}
+
+
 
     return (
         <div>
 
         <div className='my-15'>
-           <h1 className='text-2xl text-center'>My Today Appointment</h1>
+           <h1 className='text-2xl text-center'>My Today'S Appointment</h1>
            <p className='text-xs text-center'> Our platform connects you with verrifed and experience Doctors-- All at your convenience</p> 
         </div>
         
@@ -45,7 +64,7 @@ const storedDoctorData = getStoredDoctor ();
                     <div className='border-t-1 border-dashed'></div> <br />
                     
 
-                    <button className='btn btn-block text-red-500 border-red-500 text-center rounded-3xl'> Cancel Appointment</button>
+                    <button onClick={()=>handleMarkedAsDel(singleBooked?.registrationNumber)} className='btn btn-block text-red-500 border-red-500 text-center rounded-3xl'> Cancel Appointment</button>
 
 
                    
