@@ -36,6 +36,7 @@ export const router = createBrowserRouter([
    },
    {
     path:'/blogs',
+    loader:()=>fetch('/public/more_react_questions.json'),
     Component:Blogs,
 
    },

@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 // import sampleImage from '../../assets/C001-assets/doctor-sample.png'
 
 const Doctor = ({singleDoctor}) => {
-    //  console.log(singleDoctor);
+     console.log(singleDoctor);
 
 
     return (
