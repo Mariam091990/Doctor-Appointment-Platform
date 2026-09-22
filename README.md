@@ -326,6 +326,7 @@ Frontend Developer | React | JavaScript | TypeScript | Node.js
 ### Connect
 
 * GitHub: `https://github.com/Mariam091990`
+* Live URL: `https://rainbow-arithmetic-6fbcbb.netlify.app/`
 
 ---
 
