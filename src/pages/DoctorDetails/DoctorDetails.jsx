@@ -19,7 +19,7 @@ const DoctorDetails = () => {
         <div className=''>
         <div className='border rounded-2xl text-center mt-10 p-5 mb-6'>
             <h1 className='text-2xl'>Doctor's Profile Details</h1>
-            <p className='text-xs'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo doloribus vitae iusto adipisci. Debitis perspiciatis delectus dolore soluta. Harum, dicta?</p>
+            <p className='text-xs'>Book doctor Appointment with  <span className='text-2xl text-blue-700'>{ singleDoctor?.name}</span> in our hospital</p>
         </div>
          <div className='flex gap-6'>
             <div><img src={singleDoctor?.image} alt="" /></div>

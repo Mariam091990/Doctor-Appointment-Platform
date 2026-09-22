@@ -41,8 +41,10 @@ const remainingData = storedData.filter(number => {
     const match = number.trim() !== registrationNumber.trim();
     console.log(`Comparing "${number}" to "${registrationNumber}" → keep: ${match}`);
     return match;
+   
   });
 console.log("After Remove:", remainingData);
+ alert ("canceled appointment")
  const cartStringify = JSON.stringify (remainingData)
  console.log(cartStringify);
  localStorage.setItem("bookingList", cartStringify)

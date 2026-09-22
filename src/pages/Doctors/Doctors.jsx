@@ -13,7 +13,7 @@ console.log(data);
     return (
         <div>
              <h1 className='text-3xl bold text-center'>Our Best Doctors</h1> 
-             <p className='text-sm text-center mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sint ex aut, perferendis pariatur quam voluptates laboriosam voluptatem. Modi, nulla.</p>
+             <p className='text-sm text-center mb-10'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
             
            
   

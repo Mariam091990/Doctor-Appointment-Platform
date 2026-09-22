@@ -1,10 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router';
+import logo from '../../assets/C001-assets/logo.png'
 
 const Footer = () => {
     return (
         <div>
+          
+          
            <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+           <div className='flex'> <img src={logo} alt="logo" />
+           <p className='text-2xl'> DocTalk</p>
+           </div>
+        
   <nav className="grid grid-flow-col gap-4 underline">
     <Link to='/'><a className="link link-hover">Home</a></Link>
     <Link to='/my-bookings'><a className="link link-hover">My-Bookings</a></Link>
